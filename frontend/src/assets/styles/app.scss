@@ -7,63 +7,62 @@
 @import "./components/dashboard/password.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    list-style-type: none;
-    outline: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: $primary-background-color;
+  width: 100%;
+  height: 100vh;
+  background-color: $primary-background-color;
 }
 
 ::selection {
-    background-color: $secondary-background-color;
-    color: $accent-color;
+  background-color: $secondary-background-color;
+  color: $accent-color;
 }
 
 .loader {
-    width: 50px;
-    padding: 8px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: $accent-color;
-    --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
-    -webkit-mask: var(--_m);
-    mask: var(--_m);
-    -webkit-mask-composite: source-out;
-    mask-composite: subtract;
-    animation: l3 1s infinite linear;
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: $accent-color;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
 }
 
 @keyframes l3 {
-    to {
-        transform: rotate(1turn);
-    }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
-
 *::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  *::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  *::-webkit-scrollbar-thumb {
-    background: $primary-btn-color;
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  *::-webkit-scrollbar-thumb:hover {
-    background: $accent-color;
-  }
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: $primary-btn-color;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: $accent-color;
+}

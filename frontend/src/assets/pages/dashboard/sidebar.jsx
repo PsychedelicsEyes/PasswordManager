@@ -53,9 +53,8 @@ const Sidebar = () => {
             <span className="link_name">Settings</span>
           </a>
         </li>
-
-        <li id="profile" onClick={handleLogout}>
-          <a>
+        <li className="logout" onClick={handleLogout}>
+          <a href="#">
             <i className="bx bx-log-out"></i>
             <span className="link_name">Logout</span>
           </a>
@@ -66,4 +65,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-

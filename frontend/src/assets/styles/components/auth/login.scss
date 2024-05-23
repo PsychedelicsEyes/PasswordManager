@@ -39,6 +39,11 @@
                     color: $primary-text-color;
                 }
 
+                &:focus {
+                    outline: none;
+                    border-color: $accent-color;
+                }
+                
                 &.required-field {
                     border: $error-color 2px solid;
                     color: $error-color;
