@@ -16,7 +16,7 @@ A secure and efficient password manager application that allows users to manage 
 Clone the repository and install the backend dependencies:
 
 ```bash
-git clone git@github.com:yourusername/password-manager.git
+git clone git@github.com:PsychedelicsEyes/PasswordManager.git
 cd password-manager/backend
 npm install
 ```
